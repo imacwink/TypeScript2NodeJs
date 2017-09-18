@@ -17,6 +17,7 @@ TypeScript为大型应用之开发而设计，可以编译成javascript来确保
 -------------
 一方面提供一个开发的Runtime；另一方面提供的npm工具，我们可以利用这个工具来安装TypeScript。
 
+``` xml
 TypeScript2NodeJs
 |---build                 // js目录
 |  |---server.js          // tsc 编译生成的js文件
@@ -28,7 +29,7 @@ TypeScript2NodeJs
 |---tsconfig.json         // tsc --init
 |---typings.json          // typings init
 |---README.md
-
+```
 - 1.首先安装NodeJS和NPM 注：npm install npm -g 安装npm，nodejs 可以在官网下载
 - 2.mkdir TypeScript2NodeJs cd TypeScript2NodeJs\
 - 3.npm init 创建 package.json 文件
