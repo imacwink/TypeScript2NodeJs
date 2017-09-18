@@ -1,6 +1,5 @@
----
 #TypeScript2NodeJs
--------------
+========
 最近在学习typescript的过程中，想到也许可以使用ts来开发node.js项目。在网上搜了一下，其实已经有很多开发者实践了这方面的内容。这里，我记录一下自己搭建开发环境的简单过程。
 
 > 关于我，欢迎关注  
@@ -53,7 +52,7 @@ TypeScript2NodeJs
     ]
 }
 ```
-> "compilerOptions"是编译选项
+-- "compilerOptions"是编译选项
 > "module"是用来指定设置编译后的js代码，使用何种模块规范。由于是开发node.js项目，所以选择commonjs。
 > "target"是编译后的js代码遵循何种规范，可以是es3/es5/es6等等，这里为了对比ts 2.0代码和es6代码的不同，使用了"es6"。
 > "rootDir"是一个需要注意的地方，它会告诉编译器，此目录下的文件需要经过编译。
