@@ -13,7 +13,6 @@
 TypeScript是一种由微软开发的自由和开源的编程语言，通常我们认为其是JavaScript的一个超集，且本质上向这个语言添加了可选的静态类型和基于类的面向对象编程。安德斯·海尔斯伯格，C#的首席架构师，已工作于TypeScript的开发。
 TypeScript为大型应用之开发而设计，可以编译成javascript来确保兼容性。
 
----
 #安装Node.js
 -------------
 一方面提供一个开发的Runtime；另一方面提供的npm工具，我们可以利用这个工具来安装TypeScript。
@@ -30,11 +29,11 @@ TypeScript2NodeJs
 |---typings.json          // typings init
 |---README.md
 
-1.首先安装NodeJS和NPM 注：npm install npm -g 安装npm，nodejs 可以在官网下载
-2.mkdir TypeScript2NodeJs cd TypeScript2NodeJs\
-3.npm init 创建 package.json 文件
-4.tsc --init 创建 tsconfig.json 文件并修改 注：如果没有安装，可以通过 npm install -g typescript， 可以通过tsc --version 检查是否安装成功
-
+- 1.首先安装NodeJS和NPM 注：npm install npm -g 安装npm，nodejs 可以在官网下载
+- 2.mkdir TypeScript2NodeJs cd TypeScript2NodeJs\
+- 3.npm init 创建 package.json 文件
+- 4.tsc --init 创建 tsconfig.json 文件并修改 注：如果没有安装，可以通过 npm install -g typescript， 可以通过tsc --version 检查是否安装成功
+``` xml
 {
     "compilerOptions": {
         "module": "commonjs",   //指定生成哪个模块系统代码
@@ -52,7 +51,7 @@ TypeScript2NodeJs
         "node_modules"
     ]
 }
-
+```
 "compilerOptions"是编译选项
 "module"是用来指定设置编译后的js代码，使用何种模块规范。由于是开发node.js项目，所以选择commonjs。
 "target"是编译后的js代码遵循何种规范，可以是es3/es5/es6等等，这里为了对比ts 2.0代码和es6代码的不同，使用了"es6"。
