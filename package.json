@@ -1,0 +1,22 @@
+{
+  "name": "yungangwang",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yungangwang/TypeScript2NodeJs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yungangwang/TypeScript2NodeJs/issues"
+  },
+  "homepage": "https://github.com/yungangwang/TypeScript2NodeJs#readme",
+  "devDependencies": {
+    "@types/node": "^8.0.28"
+  }
+}
