@@ -61,15 +61,13 @@ TypeScript2NodeJs
 所以，添加"./src/**/*"到"include"所指向的数组，就可以指定./src下的所有文件，是我们真正需要被编译的，其他目录将会被排除。
 "outDir" 指向了编译后的js代码输出的地方。在文档中也有"outFile"选项，可以把所有的ts文件按照一定顺序规则打包成一个文件，具体可以参考文档。在这里，我们优先使用outDir。
 
-5.typings init 创建 typings.json 文件  注：如果没有安装，可以通过 npm install typings -g全局安装， 可以通过typings --version 检查是否安装成功
-6.项目根目录执行 typings install dt~node --global --save
-7.项目根目录执行 npm install --save-dev @types/node
-8.现在在src创建一个ts文件，在通过CTRL+SHIFT+B编译，看是否能正常在build目录下生成对应的JS文件;
-9.创建launch.json文件并修改：
+- 5.typings init 创建 typings.json 文件  注：如果没有安装，可以通过 npm install typings -g全局安装， 可以通过typings --version 检查是否安装成功
+- 6.项目根目录执行 typings install dt~node --global --save
+- 7.项目根目录执行 npm install --save-dev @types/node
+- 8.现在在src创建一个ts文件，在通过CTRL+SHIFT+B编译，看是否能正常在build目录下生成对应的JS文件;
+- 9.创建launch.json文件并修改：
+``` xml
 {
-    // Use IntelliSense to learn about possible Node.js debug attributes.
-    // Hover to view descriptions of existing attributes.
-    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
         {
@@ -83,5 +81,5 @@ TypeScript2NodeJs
         }
     ]
 }
-
+```
 接下来编译运行，你就可以用ts写nodejs代码同时也可以在ts层调试了，最主要的是你终于有静态检查了；
