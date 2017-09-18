@@ -52,7 +52,7 @@ TypeScript2NodeJs
     ]
 }
 ```
--- "compilerOptions"是编译选项
+<br>"compilerOptions"是编译选项</br>
 -- "module"是用来指定设置编译后的js代码，使用何种模块规范。由于是开发node.js项目，所以选择commonjs。
 -- "target"是编译后的js代码遵循何种规范，可以是es3/es5/es6等等，这里为了对比ts 2.0代码和es6代码的不同，使用了"es6"。
 -- "rootDir"是一个需要注意的地方，它会告诉编译器，此目录下的文件需要经过编译。
