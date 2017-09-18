@@ -1,4 +1,17 @@
-# TypeScript2NodeJs
+##TypeScript2NodeJs
+最近在学习typescript的过程中，想到也许可以使用ts来开发node.js项目。在网上搜了一下，其实已经有很多开发者实践了这方面的内容。这里，我记录一下自己搭建开发环境的简单过程。
+
+> 关于我，欢迎关注  
+  微信：[macwink]()  
+
+#简介
+本文将简述如何使用vscode [Visual Studio Code]开发工具来搭建一套TypeScript的开发环境，主要的目的是落地留痕，同时也希望能对一些刚入门的小伙伴有一定的参考价值。[注意：Windows，Linux，OS X在操作上基本上一致，只是工具的安装有所不同，这里仅以Windows平台作为本次教程的演示环境]
+
+TypeScript是一种由微软开发的自由和开源的编程语言，通常我们认为其是JavaScript的一个超集，且本质上向这个语言添加了可选的静态类型和基于类的面向对象编程。安德斯·海尔斯伯格，C#的首席架构师，已工作于TypeScript的开发。
+TypeScript为大型应用之开发而设计，可以编译成javascript来确保兼容性。
+
+#安装Node.js
+一方面提供一个开发的Runtime；另一方面提供的npm工具，我们可以利用这个工具来安装TypeScript。
 
 TypeScript2NodeJs
 |---build                 // js目录
